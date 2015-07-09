@@ -8,7 +8,8 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UICollectionViewController {
+    private let kShowCellIdentifier = "showGridIdentifier"
 
     override func viewDidLoad() {
         super.viewDidLoad()
