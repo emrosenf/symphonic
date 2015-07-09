@@ -12,6 +12,15 @@
 		204249E21B4F19AE009B4ECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204249E11B4F19AE009B4ECA /* Images.xcassets */; };
 		204249E51B4F19AE009B4ECA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204249E31B4F19AE009B4ECA /* LaunchScreen.xib */; };
 		204249F11B4F19AF009B4ECA /* SymphonicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204249F01B4F19AF009B4ECA /* SymphonicTests.swift */; };
+		20424A1F1B4F2515009B4ECA /* disneyhall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A161B4F2515009B4ECA /* disneyhall.jpg */; };
+		20424A201B4F2515009B4ECA /* laboheme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A171B4F2515009B4ECA /* laboheme.jpg */; };
+		20424A211B4F2515009B4ECA /* madamebutterfly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A181B4F2515009B4ECA /* madamebutterfly.jpg */; };
+		20424A221B4F2515009B4ECA /* magicflute.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A191B4F2515009B4ECA /* magicflute.jpg */; };
+		20424A231B4F2515009B4ECA /* mobydick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A1A1B4F2515009B4ECA /* mobydick.jpg */; };
+		20424A241B4F2515009B4ECA /* norma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A1B1B4F2515009B4ECA /* norma.jpg */; };
+		20424A251B4F2515009B4ECA /* pagliacci.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20424A1C1B4F2515009B4ECA /* pagliacci.jpg */; };
+		20424A261B4F2515009B4ECA /* shows.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20424A1D1B4F2515009B4ECA /* shows.plist */; };
+		20424A271B4F2515009B4ECA /* venues.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20424A1E1B4F2515009B4ECA /* venues.plist */; };
 		2432428708CB08987C76A992 /* SearchShowsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243245D07B2A2DD67973456A /* SearchShowsVC.swift */; };
 		2432449AE589D45113D608E2 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324894EED1A3118CE084C6 /* HistoryVC.swift */; };
 		243247D1A0697FA0839B5E97 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324F0EAAF5438773062C36 /* Venue.swift */; };
@@ -39,6 +48,15 @@
 		204249EA1B4F19AF009B4ECA /* SymphonicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymphonicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		204249EF1B4F19AF009B4ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		204249F01B4F19AF009B4ECA /* SymphonicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymphonicTests.swift; sourceTree = "<group>"; };
+		20424A161B4F2515009B4ECA /* disneyhall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disneyhall.jpg; sourceTree = "<group>"; };
+		20424A171B4F2515009B4ECA /* laboheme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laboheme.jpg; sourceTree = "<group>"; };
+		20424A181B4F2515009B4ECA /* madamebutterfly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = madamebutterfly.jpg; sourceTree = "<group>"; };
+		20424A191B4F2515009B4ECA /* magicflute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = magicflute.jpg; sourceTree = "<group>"; };
+		20424A1A1B4F2515009B4ECA /* mobydick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mobydick.jpg; sourceTree = "<group>"; };
+		20424A1B1B4F2515009B4ECA /* norma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = norma.jpg; sourceTree = "<group>"; };
+		20424A1C1B4F2515009B4ECA /* pagliacci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagliacci.jpg; sourceTree = "<group>"; };
+		20424A1D1B4F2515009B4ECA /* shows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shows.plist; sourceTree = "<group>"; };
+		20424A1E1B4F2515009B4ECA /* venues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = venues.plist; sourceTree = "<group>"; };
 		24324131D6A483C03E2E0E18 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24324491293A060BEE87129A /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		243245D07B2A2DD67973456A /* SearchShowsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchShowsVC.swift; sourceTree = "<group>"; };
@@ -85,6 +103,7 @@
 		204249D51B4F19AE009B4ECA /* Symphonic */ = {
 			isa = PBXGroup;
 			children = (
+				20424A141B4F2515009B4ECA /* AppData */,
 				204249D81B4F19AE009B4ECA /* AppDelegate.swift */,
 				204249DE1B4F19AE009B4ECA /* Main.storyboard */,
 				204249E11B4F19AE009B4ECA /* Images.xcassets */,
@@ -120,6 +139,30 @@
 				204249EF1B4F19AF009B4ECA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20424A141B4F2515009B4ECA /* AppData */ = {
+			isa = PBXGroup;
+			children = (
+				20424A151B4F2515009B4ECA /* Assets */,
+				20424A1D1B4F2515009B4ECA /* shows.plist */,
+				20424A1E1B4F2515009B4ECA /* venues.plist */,
+			);
+			path = AppData;
+			sourceTree = "<group>";
+		};
+		20424A151B4F2515009B4ECA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				20424A161B4F2515009B4ECA /* disneyhall.jpg */,
+				20424A171B4F2515009B4ECA /* laboheme.jpg */,
+				20424A181B4F2515009B4ECA /* madamebutterfly.jpg */,
+				20424A191B4F2515009B4ECA /* magicflute.jpg */,
+				20424A1A1B4F2515009B4ECA /* mobydick.jpg */,
+				20424A1B1B4F2515009B4ECA /* norma.jpg */,
+				20424A1C1B4F2515009B4ECA /* pagliacci.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		2432407002C136E39863ABFF /* Model */ = {
@@ -228,8 +271,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20424A271B4F2515009B4ECA /* venues.plist in Resources */,
+				20424A241B4F2515009B4ECA /* norma.jpg in Resources */,
+				20424A211B4F2515009B4ECA /* madamebutterfly.jpg in Resources */,
 				204249E01B4F19AE009B4ECA /* Main.storyboard in Resources */,
+				20424A261B4F2515009B4ECA /* shows.plist in Resources */,
 				204249E51B4F19AE009B4ECA /* LaunchScreen.xib in Resources */,
+				20424A201B4F2515009B4ECA /* laboheme.jpg in Resources */,
+				20424A221B4F2515009B4ECA /* magicflute.jpg in Resources */,
+				20424A231B4F2515009B4ECA /* mobydick.jpg in Resources */,
+				20424A251B4F2515009B4ECA /* pagliacci.jpg in Resources */,
+				20424A1F1B4F2515009B4ECA /* disneyhall.jpg in Resources */,
 				204249E21B4F19AE009B4ECA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +501,7 @@
 				204249F61B4F19AF009B4ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		204249F71B4F19AF009B4ECA /* Build configuration list for PBXNativeTarget "SymphonicTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +510,7 @@
 				204249F91B4F19AF009B4ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

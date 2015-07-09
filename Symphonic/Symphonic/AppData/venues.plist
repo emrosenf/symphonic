@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>0</string>
+		<key>name</key>
+		<string>Disney Hall</string>
+		<key>image</key>
+		<string>disneyhall.jpg</string>
+		<key>lat</key>
+		<string>34.055278</string>
+		<key>long</key>
+		<string>-118.25</string>
+	</dict>
+</array>
+</plist>

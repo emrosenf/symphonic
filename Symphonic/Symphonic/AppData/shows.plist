@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Pagliacci</string>
+		<key>type</key>
+		<string>opera</string>
+		<key>id</key>
+		<string>0</string>
+		<key>venue_id</key>
+		<string>0</string>
+		<key>image</key>
+		<string>pagliacci.jpg</string>
+		<key>description</key>
+		<string>Two legendary directors combine forces for a sensational season-opener. First, Plácido Domingo stars as Gianni Schicchi in Woody Allen’s riotous staging of Puccini’s comic masterpiece, conducted by Grant Gershon. When greedy relatives descend upon their kinsman’s deathbed, they enlist Gianni Schicchi to rewrite the will to their benefit. Handed an opportunity too good to resist, the devious Schicchi turns the tables, securing the future happiness of two young lovers in the process.
+
+After the intermission, Plácido Domingo conducts the conclusion of the double bill, Franco Zeffirelli’s epic production of Pagliacci starring Marco Berti, Ana María Martínez and George Gagnidze. Filling the stage with hair-raising drama, the action plays out in a breathtaking contemporary urban landscape. When a cuckolded husband takes his revenge, his desperate wife must fight for her life in front of a cheering, oblivious audience.</string>
+		<key>dates</key>
+		<array>
+			<date>2015-09-13T01:00:00Z</date>
+			<date>2015-09-18T02:30:00Z</date>
+			<date>2015-09-20T21:00:00Z</date>
+			<date>2015-09-25T02:30:00Z</date>
+			<date>2015-09-27T21:00:00Z</date>
+			<date>2015-10-04T02:00:00Z</date>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Moby Dick</string>
+		<key>image</key>
+		<string>mobydick.jpg</string>
+		<key>type</key>
+		<string>opera</string>
+		<key>id</key>
+		<string>1</string>
+		<key>venue_id</key>
+		<string>0</string>
+		<key>description</key>
+		<string>With astonishing visual effects and a magnificent musical score, one of the very greatest of all American novels comes thrillingly to life on the stage. A fanatical sea captain’s unrelenting obsession for revenge drives his entire crew into the face of death and destruction as they explore the vast and mysterious oceans in search of a monster.
+
+Epic in every sense of the word, Moby-Dick comes to Los Angeles after a series of triumphs around the world. Returning as Captain Ahab is the sensational Jay Hunter Morris, whose “fiery brilliance in his resplendent upper range captured both Ahab’s inner strength and demonic possession” (SanDiego.com). Based on Herman Melville&apos;s classic novel, Jake Heggie’s sweeping, gorgeously detailed score has already taken its rightful place as a true contemporary masterpiece.
+
+&quot;Sumptuous and stirring! Theatrically stunning... epic in scale.&quot; (San Francisco Chronicle)
+“An undeniable success” (The New York Times)
+“The hit of the season” (The Washington Post)</string>
+		<key>dates</key>
+		<array>
+			<date>2015-11-01T02:30:00Z</date>
+			<date>2015-11-08T03:30:00Z</date>
+			<date>2015-11-15T22:00:00Z</date>
+			<date>2015-11-20T03:30:00Z</date>
+			<date>2015-11-22T22:00:00Z</date>
+			<date>2015-11-29T03:30:00Z</date>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Norma</string>
+		<key>type</key>
+		<string>opera</string>
+		<key>image</key>
+		<string>norma.jpg</string>
+		<key>id</key>
+		<string>2</string>
+		<key>venue_id</key>
+		<string>0</string>
+		<key>description</key>
+		<string>A clandestine love affair brings two mortal enemies together during a time of war. But when Norma discovers that her beloved now loves another, a fiery new battle begins as betrayal, anguish and fury take the reins.
+
+A superlative quartet of soloists is led by the extraordinary Angela Meade—hailed by Opera News as “a voice to be reckoned with”—in the iconic title role, opposite the Adalgisa of mezzo-soprano Jamie Barton, this year&apos;s winner of the prestigious Richard Tucker Award. From the sublime “Casta diva” to the blazing finale, Norma delivers an overwhelming feast of vocal fireworks.</string>
+		<key>dates</key>
+		<array>
+			<date>2015-11-22T03:30:00Z</date>
+			<date>2015-11-29T22:00:00Z</date>
+			<date>2015-12-03T03:30:00Z</date>
+			<date>2015-12-06T03:30:00Z</date>
+			<date>2015-12-11T03:30:00Z</date>
+			<date>2015-12-13T22:00:00Z</date>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Magic Flute</string>
+		<key>type</key>
+		<string>opera</string>
+		<key>image</key>
+		<string>magicflute.jpg</string>
+		<key>id</key>
+		<string>3</string>
+		<key>venue_id</key>
+		<string>0</string>
+		<key>description</key>
+		<string>A celebration of true love conquering all, The Magic Flute transports us into an enchanted world where good faces the forces of darkness. Under the masterful baton of James Conlon, LA Opera presents a highly anticipated revival of a production that created a sensation in our 2013/14 season.
+
+Director Barrie Kosky created the staging in combination with the British theater group “1927,&quot; whose humorous shows have thrilled audiences all over the world with their interaction between film animation and live-performing actors. Packed with exquisite singing and stage wizardry, Mozart&apos;s delightful blend of high comedy and serious drama enchants young and old alike.</string>
+		<key>dates</key>
+		<array>
+			<date>2016-02-14T03:30:00Z</date>
+			<date>2016-02-21T03:30:00Z</date>
+			<date>2016-02-25T03:30:00Z</date>
+			<date>2016-02-28T22:00:00Z</date>
+			<date>2016-03-03T03:30:00Z</date>
+			<date>2016-03-06T22:00:00Z</date>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Madame Butterfly</string>
+		<key>type</key>
+		<string>opera</string>
+		<key>image</key>
+		<string>madamebutterfly.jpg</string>
+		<key>id</key>
+		<string>4</string>
+		<key>venue_id</key>
+		<string>0</string>
+		<key>description</key>
+		<string>A love that knows no boundaries goes horribly wrong in a fateful meeting of East and West. What begins as an idyllic liaison in an enchanting land of cherry blossoms turns into the wrenching tragedy of an abandoned bride forced to make an excruciating decision.
+
+Puccini’s cherished music expresses the heartbreak of a naive young woman who commits herself to a man unworthy of her loyalty. Soprano Ana María Martínez returns as the beloved geisha, one of her signature roles. “Ana María Martínez sang with a poignant vitality that brought forth both the teenage Butterfly&apos;s youthful innocence and, later, her darkest despair. Martínez&apos;s best moments coincided with Butterfly&apos;s most desperate ones: the fragile quality to her singing in ‘Un bel dì’ underscored a deeply affecting, pitiful clinging to hope beyond all reason.” (Opera News)</string>
+		<key>dates</key>
+		<array>
+			<date>2016-03-13T03:30:00Z</date>
+			<date>2016-03-20T21:00:00Z</date>
+			<date>2016-03-24T02:30:00Z</date>
+			<date>2016-03-27T02:30:00Z</date>
+			<date>2016-04-01T02:30:00Z</date>
+			<date>2016-04-03T21:00:00Z</date>
+		</array>
+	</dict>
+</array>
+</plist>
