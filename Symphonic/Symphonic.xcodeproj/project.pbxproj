@@ -57,6 +57,7 @@
 		20424A1C1B4F2515009B4ECA /* pagliacci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagliacci.jpg; sourceTree = "<group>"; };
 		20424A1D1B4F2515009B4ECA /* shows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shows.plist; sourceTree = "<group>"; };
 		20424A1E1B4F2515009B4ECA /* venues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = venues.plist; sourceTree = "<group>"; };
+		20424A281B4F34CA009B4ECA /* Symphonic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Symphonic.entitlements; sourceTree = "<group>"; };
 		24324131D6A483C03E2E0E18 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24324491293A060BEE87129A /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		243245D07B2A2DD67973456A /* SearchShowsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchShowsVC.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		204249D51B4F19AE009B4ECA /* Symphonic */ = {
 			isa = PBXGroup;
 			children = (
+				20424A281B4F34CA009B4ECA /* Symphonic.entitlements */,
 				20424A141B4F2515009B4ECA /* AppData */,
 				204249D81B4F19AE009B4ECA /* AppDelegate.swift */,
 				204249DE1B4F19AE009B4ECA /* Main.storyboard */,
@@ -240,6 +242,12 @@
 				TargetAttributes = {
 					204249D21B4F19AE009B4ECA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4G32E7R576;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					204249E91B4F19AF009B4ECA = {
 						CreatedOnToolsVersion = 6.4;
@@ -432,9 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Symphonic/Symphonic.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Symphonic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -442,9 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Symphonic/Symphonic.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Symphonic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
