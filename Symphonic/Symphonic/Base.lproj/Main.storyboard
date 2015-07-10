@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Search-->
@@ -26,11 +27,88 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Search" id="xoQ-s3-VeK">
-                        <barButtonItem key="rightBarButtonItem" image="icon_filter" id="o57-n6-Nf7"/>
+                        <barButtonItem key="rightBarButtonItem" image="icon_filter" id="o57-n6-Nf7">
+                            <connections>
+                                <action selector="filterPressed:" destination="aI4-i7-Rmd" id="TAF-yQ-sYp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
             </objects>
             <point key="canvasLocation" x="1562" y="-456"/>
+        </scene>
+        <!--Filter-->
+        <scene sceneID="oOu-aO-6oY">
+            <objects>
+                <viewController storyboardIdentifier="filterVC" id="ss0-AM-Rhe" customClass="FilterShowsVC" customModule="Symphonic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pCH-wF-Dx3"/>
+                        <viewControllerLayoutGuide type="bottom" id="2kn-CH-Mbb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VCT-VT-KGg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-UJ-yFw">
+                                <rect key="frame" x="16" y="97" width="568" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="458195826.92887902">
+                                    <!--2015-07-10 04:37:06 +0000-->
+                                </date>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHv-gB-ydA">
+                                <rect key="frame" x="16" y="290" width="568" height="162"/>
+                            </pickerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-0j-kJ6">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="pee-wu-Ht1">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="z9n-fN-vET">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="ss0-AM-Rhe" id="ra2-KH-HXh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Tdo-6e-jcO">
+                                            <connections>
+                                                <action selector="donePressed:" destination="ss0-AM-Rhe" id="Kgx-cK-wHb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tHv-gB-ydA" firstAttribute="leading" secondItem="VCT-VT-KGg" secondAttribute="leadingMargin" id="1Y2-3w-0um"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dHb-UJ-yFw" secondAttribute="trailing" id="4f5-jL-IDn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t7H-0j-kJ6" secondAttribute="trailing" constant="-16" id="73d-Te-wSK"/>
+                            <constraint firstItem="t7H-0j-kJ6" firstAttribute="top" secondItem="pCH-wF-Dx3" secondAttribute="bottom" id="81E-ob-ZYK"/>
+                            <constraint firstItem="dHb-UJ-yFw" firstAttribute="leading" secondItem="VCT-VT-KGg" secondAttribute="leadingMargin" id="XvG-4o-wcu"/>
+                            <constraint firstItem="tHv-gB-ydA" firstAttribute="top" secondItem="dHb-UJ-yFw" secondAttribute="bottom" constant="31" id="aWa-5r-Mu6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tHv-gB-ydA" secondAttribute="trailing" id="cK7-QU-Z2P"/>
+                            <constraint firstItem="dHb-UJ-yFw" firstAttribute="top" secondItem="pCH-wF-Dx3" secondAttribute="bottom" constant="33" id="f5g-VG-0iX"/>
+                            <constraint firstItem="t7H-0j-kJ6" firstAttribute="leading" secondItem="VCT-VT-KGg" secondAttribute="leadingMargin" constant="-16" id="jfg-xV-cIB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter" id="iQp-gs-AAV">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bJa-wG-b2d">
+                            <connections>
+                                <action selector="cancelPressed:" destination="ss0-AM-Rhe" id="1VM-QS-oZU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dLq-A3-wbY">
+                            <connections>
+                                <action selector="donePressed:" destination="ss0-AM-Rhe" id="6Qo-wn-ozT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="dHb-UJ-yFw" id="9Bj-Xt-0Za"/>
+                        <outlet property="typePicker" destination="tHv-gB-ydA" id="Ksd-kp-rYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8s-z1-WBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3160" y="-456"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
