@@ -7,8 +7,7 @@
         <!--Search-->
         <scene sceneID="vNq-8h-VJw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DIm-6g-qwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <collectionViewController id="aI4-i7-Rmd" customClass="SearchShowsVC" customModule="Symphonic" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="aI4-i7-Rmd" customClass="SearchShowsVC" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yrJ-tb-xi4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,13 +25,13 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Search" id="xoQ-s3-VeK"/>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIm-6g-qwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1562" y="-456"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Symphonic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -66,6 +65,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
