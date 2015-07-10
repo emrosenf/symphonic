@@ -12,8 +12,7 @@ class SearchShowsVC: UICollectionViewController {
     private let kShowCellIdentifier = "showGridIdentifier"
     private let insets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
 
-    
-    var shows = [Show]()
+    private var shows = [Show]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,16 @@ class SearchShowsVC: UICollectionViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func filterPressed(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
+        let filterVC = storyboard.instantiateViewControllerWithIdentifier("filterVC") as! FilterShowsVC
+        filterVC.delegate = self
+//        (filterNavVC.topViewController as FilterShowsVC).delegate = self
+
+        self.presentViewController(filterVC, animated: true, completion: nil)
+    }
 }
 
 extension SearchShowsVC: UICollectionViewDataSource {
@@ -57,4 +65,15 @@ extension SearchShowsVC : UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         return insets
     }
+}
+
+extension SearchShowsVC: SearchFiltering {
+    func didEndSelectingFilter(#date: NSDate, type: Type) {
+        shows = Show.getShowList(forDate: NSDate(dateFromString: "2015-12-02"), withType: Type.Any)
+        collectionView!.reloadData()
+    }
+}
+
+protocol SearchFiltering: class {
+    func didEndSelectingFilter(#date: NSDate, type: Type)
 }
