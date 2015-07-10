@@ -7,6 +7,17 @@ import Foundation
 
 enum Type: Int {
     case Opera, Theater, Any
+
+    func getTextRepr() -> String {
+        switch self {
+            case .Opera:
+                 return "Opera"
+            case .Theater:
+                return "Theater"
+            case .Any:
+                return "Any"
+        }
+    }
 }
 
 class Show {

@@ -8,7 +8,12 @@
 
 import UIKit
 
-class SearchShowsVC: UICollectionViewController {
+class SearchShowsVC: UIViewController {
+    @IBOutlet weak var showCollectionView: UICollectionView!
+    @IBOutlet weak var collectionConstraintToTopGuide: NSLayoutConstraint!
+    @IBOutlet weak var dateFilterLabel: UILabel!
+    @IBOutlet weak var typeFilterLabel: UILabel!
+    
     private let kShowCellIdentifier = "showGridIdentifier"
     private let insets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
 
@@ -17,8 +22,11 @@ class SearchShowsVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView?.registerNib(UINib(nibName: "showCell", bundle: nil), forCellWithReuseIdentifier: kShowCellIdentifier)
+        showCollectionView.registerNib(UINib(nibName: "showCell", bundle: nil), forCellWithReuseIdentifier: kShowCellIdentifier)
 
+        // Filter info view is initially hidden
+        self.collectionConstraintToTopGuide.constant = -52
+        
         shows = Show.getShowList()
     }
 
@@ -34,18 +42,30 @@ class SearchShowsVC: UICollectionViewController {
 
         self.presentViewController(filterNavVC, animated: true, completion: nil)
     }
+ 
+    @IBAction func clearFilter(sender: AnyObject) {
+        UIView.animateWithDuration(Double(0.3), animations: {
+            // hide filter info view
+            self.collectionConstraintToTopGuide.constant = -52
+            self.view.layoutIfNeeded()
+        })
+
+        shows = Show.getShowList()
+        showCollectionView.reloadData()
+    }
+    
 }
 
 extension SearchShowsVC: UICollectionViewDataSource {
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
 
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return shows.count
     }
 
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kShowCellIdentifier, forIndexPath: indexPath) as! showCellView
 
         cell.showImage.image = UIImage(named: shows[indexPath.row].imageName)
@@ -68,8 +88,22 @@ extension SearchShowsVC : UICollectionViewDelegateFlowLayout {
 
 extension SearchShowsVC: SearchFiltering {
     func didEndSelectingFilter(#date: NSDate, type: Type) {
+        let dateStringFormatter = NSDateFormatter()
+        dateStringFormatter.dateFormat = "d MMM"
+        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+        let strRepr = dateStringFormatter.stringFromDate(date)
+        dateFilterLabel.text = "Date: " + strRepr
+
+        typeFilterLabel.text = "Type: " + type.getTextRepr()
+
+        UIView.animateWithDuration(Double(0.3), animations: {
+            // hide filter info view
+            self.collectionConstraintToTopGuide.constant = 0
+            self.view.layoutIfNeeded()
+        })
+
         shows = Show.getShowList(forDate: date, withType: type)
-        collectionView!.reloadData()
+        showCollectionView.reloadData()
     }
 }
 
