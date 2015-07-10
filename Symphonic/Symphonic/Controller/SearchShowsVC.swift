@@ -8,12 +8,13 @@
 
 import UIKit
 
-class FirstViewController: UICollectionViewController {
+class SearchShowsVC: UICollectionViewController {
     private let kShowCellIdentifier = "showGridIdentifier"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Show.getShowList()
     }
 
     override func didReceiveMemoryWarning() {
