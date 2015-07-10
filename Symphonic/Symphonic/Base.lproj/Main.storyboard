@@ -11,8 +11,9 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yrJ-tb-xi4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CuI-cB-3zH">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="20" height="20"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -23,7 +24,9 @@
                             <outlet property="delegate" destination="aI4-i7-Rmd" id="kiH-Mx-Sbd"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Search" id="xoQ-s3-VeK"/>
+                    <navigationItem key="navigationItem" title="Search" id="xoQ-s3-VeK">
+                        <barButtonItem key="rightBarButtonItem" image="icon_filter" id="o57-n6-Nf7"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIm-6g-qwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,8 +83,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Yo4-M5-kV6" kind="relationship" relationship="viewControllers" id="iux-eQ-4u1"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -109,6 +112,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_filter" width="30" height="27"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

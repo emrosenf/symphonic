@@ -8,9 +8,9 @@
 		<key>type</key>
 		<string>opera</string>
 		<key>id</key>
-		<string>0</string>
+		<integer>0</integer>
 		<key>venue_id</key>
-		<string>0</string>
+		<integer>0</integer>
 		<key>image</key>
 		<string>pagliacci.jpg</string>
 		<key>description</key>
@@ -35,9 +35,9 @@ After the intermission, Plácido Domingo conducts the conclusion of the double b
 		<key>type</key>
 		<string>opera</string>
 		<key>id</key>
-		<string>1</string>
+		<integer>1</integer>
 		<key>venue_id</key>
-		<string>0</string>
+		<integer>0</integer>
 		<key>description</key>
 		<string>With astonishing visual effects and a magnificent musical score, one of the very greatest of all American novels comes thrillingly to life on the stage. A fanatical sea captain’s unrelenting obsession for revenge drives his entire crew into the face of death and destruction as they explore the vast and mysterious oceans in search of a monster.
 
@@ -64,9 +64,9 @@ Epic in every sense of the word, Moby-Dick comes to Los Angeles after a series o
 		<key>image</key>
 		<string>norma.jpg</string>
 		<key>id</key>
-		<string>2</string>
+		<integer>2</integer>
 		<key>venue_id</key>
-		<string>0</string>
+		<integer>0</integer>
 		<key>description</key>
 		<string>A clandestine love affair brings two mortal enemies together during a time of war. But when Norma discovers that her beloved now loves another, a fiery new battle begins as betrayal, anguish and fury take the reins.
 
@@ -89,9 +89,9 @@ A superlative quartet of soloists is led by the extraordinary Angela Meade—hai
 		<key>image</key>
 		<string>magicflute.jpg</string>
 		<key>id</key>
-		<string>3</string>
+		<integer>3</integer>
 		<key>venue_id</key>
-		<string>0</string>
+		<integer>0</integer>
 		<key>description</key>
 		<string>A celebration of true love conquering all, The Magic Flute transports us into an enchanted world where good faces the forces of darkness. Under the masterful baton of James Conlon, LA Opera presents a highly anticipated revival of a production that created a sensation in our 2013/14 season.
 
@@ -114,9 +114,9 @@ Director Barrie Kosky created the staging in combination with the British theate
 		<key>image</key>
 		<string>madamebutterfly.jpg</string>
 		<key>id</key>
-		<string>4</string>
+		<integer>4</integer>
 		<key>venue_id</key>
-		<string>0</string>
+		<integer>0</integer>
 		<key>description</key>
 		<string>A love that knows no boundaries goes horribly wrong in a fateful meeting of East and West. What begins as an idyllic liaison in an enchanting land of cherry blossoms turns into the wrenching tragedy of an abandoned bride forced to make an excruciating decision.
 

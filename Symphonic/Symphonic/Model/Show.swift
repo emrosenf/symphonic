@@ -6,7 +6,7 @@
 import Foundation
 
 enum Type {
-    case Opera, Theater
+    case Opera, Theater, Any
 }
 
 class Show {
@@ -15,7 +15,6 @@ class Show {
     let imageName: String
     let dates: [NSDate]
     let descr: String
-
     let type: Type
 
     init(id: Int, name: String, imageName: String, dates: [NSDate], description: String, type: Type) {
@@ -25,6 +24,19 @@ class Show {
         self.dates = dates
         self.descr = description
         self.type = type
+    }
+    
+    class func getShowList(forDate date: NSDate, withType type: Type = Type.Any) -> [Show] {
+        var shows = getShowList()
+        return shows.filter({ (show: Show) -> Bool in
+            // < declared in extension.swift
+            let dates: [NSDate] = show.dates.filter( { $0 >= date} )
+            if dates.count > 0 && (show.type == type || type == Type.Any) {
+                return true
+            } else {
+                return false
+            }
+        })
     }
 
     class func getShowList() -> [Show] {
@@ -48,3 +60,5 @@ class Show {
     }
 
 }
+
+
