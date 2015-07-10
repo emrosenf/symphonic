@@ -8,7 +8,7 @@
         <scene sceneID="vNq-8h-VJw">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIm-6g-qwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <collectionViewController id="aI4-i7-Rmd" customClass="SearchShowsVC" sceneMemberID="viewController">
+                <collectionViewController id="aI4-i7-Rmd" customClass="SearchShowsVC" customModule="Symphonic" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yrJ-tb-xi4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
