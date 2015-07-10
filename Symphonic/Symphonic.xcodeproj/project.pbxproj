@@ -49,6 +49,16 @@
 		204249EF1B4F19AF009B4ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		204249F01B4F19AF009B4ECA /* SymphonicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymphonicTests.swift; sourceTree = "<group>"; };
 		243241141F99A2F5E907D3E4 /* mobydick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mobydick.jpg; sourceTree = "<group>"; };
+		20424A161B4F2515009B4ECA /* disneyhall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = disneyhall.jpg; sourceTree = "<group>"; };
+		20424A171B4F2515009B4ECA /* laboheme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laboheme.jpg; sourceTree = "<group>"; };
+		20424A181B4F2515009B4ECA /* madamebutterfly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = madamebutterfly.jpg; sourceTree = "<group>"; };
+		20424A191B4F2515009B4ECA /* magicflute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = magicflute.jpg; sourceTree = "<group>"; };
+		20424A1A1B4F2515009B4ECA /* mobydick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mobydick.jpg; sourceTree = "<group>"; };
+		20424A1B1B4F2515009B4ECA /* norma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = norma.jpg; sourceTree = "<group>"; };
+		20424A1C1B4F2515009B4ECA /* pagliacci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagliacci.jpg; sourceTree = "<group>"; };
+		20424A1D1B4F2515009B4ECA /* shows.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shows.plist; sourceTree = "<group>"; };
+		20424A1E1B4F2515009B4ECA /* venues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = venues.plist; sourceTree = "<group>"; };
+		20424A281B4F34CA009B4ECA /* Symphonic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Symphonic.entitlements; sourceTree = "<group>"; };
 		24324131D6A483C03E2E0E18 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24324163F58C959836E49CD1 /* venues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = venues.plist; sourceTree = "<group>"; };
 		2432441D24644C2A51BFBC20 /* pagliacci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagliacci.jpg; sourceTree = "<group>"; };
@@ -103,6 +113,8 @@
 		204249D51B4F19AE009B4ECA /* Symphonic */ = {
 			isa = PBXGroup;
 			children = (
+				20424A281B4F34CA009B4ECA /* Symphonic.entitlements */,
+				20424A141B4F2515009B4ECA /* AppData */,
 				204249D81B4F19AE009B4ECA /* AppDelegate.swift */,
 				204249DE1B4F19AE009B4ECA /* Main.storyboard */,
 				204249E11B4F19AE009B4ECA /* Images.xcassets */,
@@ -240,6 +252,12 @@
 				TargetAttributes = {
 					204249D21B4F19AE009B4ECA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4G32E7R576;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					204249E91B4F19AF009B4ECA = {
 						CreatedOnToolsVersion = 6.4;
@@ -432,9 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Symphonic/Symphonic.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Symphonic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -442,9 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Symphonic/Symphonic.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Symphonic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
