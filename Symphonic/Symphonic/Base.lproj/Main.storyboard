@@ -49,44 +49,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-UJ-yFw">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-UJ-yFw">
                                 <rect key="frame" x="16" y="97" width="568" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="458195826.92887902">
                                     <!--2015-07-10 04:37:06 +0000-->
                                 </date>
                             </datePicker>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tHv-gB-ydA">
-                                <rect key="frame" x="16" y="290" width="568" height="162"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHv-gB-ydA">
+                                <rect key="frame" x="16" y="279" width="568" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ss0-AM-Rhe" id="QFx-CI-YdC"/>
+                                    <outlet property="delegate" destination="ss0-AM-Rhe" id="wP6-70-fO1"/>
+                                </connections>
                             </pickerView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-0j-kJ6">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="pee-wu-Ht1">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="z9n-fN-vET">
-                                            <connections>
-                                                <action selector="cancelPressed:" destination="ss0-AM-Rhe" id="ra2-KH-HXh"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Tdo-6e-jcO">
-                                            <connections>
-                                                <action selector="donePressed:" destination="ss0-AM-Rhe" id="Kgx-cK-wHb"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tHv-gB-ydA" firstAttribute="leading" secondItem="VCT-VT-KGg" secondAttribute="leadingMargin" id="1Y2-3w-0um"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dHb-UJ-yFw" secondAttribute="trailing" id="4f5-jL-IDn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="t7H-0j-kJ6" secondAttribute="trailing" constant="-16" id="73d-Te-wSK"/>
-                            <constraint firstItem="t7H-0j-kJ6" firstAttribute="top" secondItem="pCH-wF-Dx3" secondAttribute="bottom" id="81E-ob-ZYK"/>
                             <constraint firstItem="dHb-UJ-yFw" firstAttribute="leading" secondItem="VCT-VT-KGg" secondAttribute="leadingMargin" id="XvG-4o-wcu"/>
-                            <constraint firstItem="tHv-gB-ydA" firstAttribute="top" secondItem="dHb-UJ-yFw" secondAttribute="bottom" constant="31" id="aWa-5r-Mu6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tHv-gB-ydA" secondAttribute="trailing" id="cK7-QU-Z2P"/>
+                            <constraint firstItem="tHv-gB-ydA" firstAttribute="top" secondItem="dHb-UJ-yFw" secondAttribute="bottom" constant="20" id="co2-hJ-zYF"/>
                             <constraint firstItem="dHb-UJ-yFw" firstAttribute="top" secondItem="pCH-wF-Dx3" secondAttribute="bottom" constant="33" id="f5g-VG-0iX"/>
-                            <constraint firstItem="t7H-0j-kJ6" firstAttribute="leading" secondItem="VCT-VT-KGg" secondAttribute="leadingMargin" constant="-16" id="jfg-xV-cIB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Filter" id="iQp-gs-AAV">
@@ -108,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8s-z1-WBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3160" y="-456"/>
+            <point key="canvasLocation" x="3212" y="-456"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -187,6 +171,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCa-Of-fHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-456"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="erv-Id-L2z">
+            <objects>
+                <navigationController storyboardIdentifier="filterNavVC" automaticallyAdjustsScrollViewInsets="NO" id="dsL-Tz-eYi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zzb-94-IYe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ss0-AM-Rhe" kind="relationship" relationship="rootViewController" id="coc-EQ-z1k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMm-MK-Ldg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="-456"/>
         </scene>
     </scenes>
     <resources>

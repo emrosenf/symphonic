@@ -7,11 +7,19 @@ import Foundation
 
 
 public func ==(lhs: NSDate, rhs: NSDate) -> Bool {
-    return lhs === rhs || lhs.compare(rhs) == .OrderedSame
+    let flags: NSCalendarUnit = .DayCalendarUnit | .MonthCalendarUnit | .YearCalendarUnit
+    let lc = NSCalendar.currentCalendar().components(flags, fromDate: lhs)
+    let rc = NSCalendar.currentCalendar().components(flags, fromDate: rhs)
+
+    return lc.year == rc.year && lc.month == rc.month && lc.day == rc.day
 }
 
 public func <(lhs: NSDate, rhs: NSDate) -> Bool {
-    return lhs.compare(rhs) == .OrderedAscending
+    let flags: NSCalendarUnit = .DayCalendarUnit | .MonthCalendarUnit | .YearCalendarUnit
+    let lc = NSCalendar.currentCalendar().components(flags, fromDate: lhs)
+    let rc = NSCalendar.currentCalendar().components(flags, fromDate: rhs)
+
+    return lc.year < rc.year && lc.month < rc.month && lc.day < rc.day
 }
 
 extension NSDate: Comparable {

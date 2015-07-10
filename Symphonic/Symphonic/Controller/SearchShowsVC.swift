@@ -19,7 +19,7 @@ class SearchShowsVC: UICollectionViewController {
 
         collectionView?.registerNib(UINib(nibName: "showCell", bundle: nil), forCellWithReuseIdentifier: kShowCellIdentifier)
 
-        shows = Show.getShowList(forDate: NSDate(dateFromString: "2015-12-02"), withType: Type.Any)
+        shows = Show.getShowList()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,11 +29,10 @@ class SearchShowsVC: UICollectionViewController {
     @IBAction func filterPressed(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-        let filterVC = storyboard.instantiateViewControllerWithIdentifier("filterVC") as! FilterShowsVC
-        filterVC.delegate = self
-//        (filterNavVC.topViewController as FilterShowsVC).delegate = self
+        let filterNavVC = storyboard.instantiateViewControllerWithIdentifier("filterNavVC") as! UINavigationController
+        (filterNavVC.topViewController as! FilterShowsVC).delegate = self
 
-        self.presentViewController(filterVC, animated: true, completion: nil)
+        self.presentViewController(filterNavVC, animated: true, completion: nil)
     }
 }
 
@@ -69,7 +68,7 @@ extension SearchShowsVC : UICollectionViewDelegateFlowLayout {
 
 extension SearchShowsVC: SearchFiltering {
     func didEndSelectingFilter(#date: NSDate, type: Type) {
-        shows = Show.getShowList(forDate: NSDate(dateFromString: "2015-12-02"), withType: Type.Any)
+        shows = Show.getShowList(forDate: date, withType: type)
         collectionView!.reloadData()
     }
 }

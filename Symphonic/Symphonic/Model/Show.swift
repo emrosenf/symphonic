@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum Type {
+enum Type: Int {
     case Opera, Theater, Any
 }
 
@@ -30,7 +30,7 @@ class Show {
         var shows = getShowList()
         return shows.filter({ (show: Show) -> Bool in
             // < declared in extension.swift
-            let dates: [NSDate] = show.dates.filter( { $0 >= date} )
+            let dates: [NSDate] = show.dates.filter( { $0 == date} )
             if dates.count > 0 && (show.type == type || type == Type.Any) {
                 return true
             } else {

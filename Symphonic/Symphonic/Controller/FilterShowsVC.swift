@@ -9,10 +9,13 @@ import UIKit
 
 class FilterShowsVC : UIViewController {
     weak var delegate: SearchFiltering?
-    
+
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var typePicker: UIPickerView!
-    
+
+    private let pickerTypeData = ["Any", "Theater", "Opera"]
+    private let pickerTypeForIdx = [Type.Any, Type.Theater, Type.Opera]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,13 +23,32 @@ class FilterShowsVC : UIViewController {
     
     @IBAction func donePressed(sender: AnyObject) {
         if let delegate = self.delegate {
-//            delegate.didEndSelectingFilter()
+            delegate.didEndSelectingFilter(date: datePicker.date,
+                    type: pickerTypeForIdx[typePicker.selectedRowInComponent(0)])
         }
-        self.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
+        close()
     }
     
     @IBAction func cancelPressed(sender: AnyObject) {
-        self.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
+        close()
     }
-    
+
+    private func close() {
+        self.parentViewController?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
+
+extension FilterShowsVC: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 3
+    }
+
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return pickerTypeData[row]
+    }
+}
+
