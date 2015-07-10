@@ -9,9 +9,19 @@
 import UIKit
 
 class ShowDetailVC: UIViewController {
+    
+    @IBOutlet weak var showImageView: ShowImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let scrollView = UIScrollView(frame: self.view.bounds)
+//        self.view = scrollView
+//        showImageView.removeFromSuperview()
+//        showImageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width)
+//        scrollView.addSubview(showImageView)
+        
 
         // Do any additional setup after loading the view.
     }
