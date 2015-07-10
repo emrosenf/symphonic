@@ -20,7 +20,7 @@ class SearchShowsVC: UICollectionViewController {
 
         collectionView?.registerNib(UINib(nibName: "showCell", bundle: nil), forCellWithReuseIdentifier: kShowCellIdentifier)
 
-        shows = Show.getShowList()
+        shows = Show.getShowList(forDate: NSDate(dateFromString: "2015-12-02"), withType: Type.Any)
     }
 
     override func didReceiveMemoryWarning() {

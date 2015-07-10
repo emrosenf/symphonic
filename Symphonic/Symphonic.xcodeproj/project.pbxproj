@@ -18,6 +18,7 @@
 		243243A181C679AA91FBB17E /* venues.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24324163F58C959836E49CD1 /* venues.plist */; };
 		243243B031F7413BA7D3074E /* mobydick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 243241141F99A2F5E907D3E4 /* mobydick.jpg */; };
 		2432449AE589D45113D608E2 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324894EED1A3118CE084C6 /* HistoryVC.swift */; };
+		2432472D012EB1593BBEF04D /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432419796E7AF6048631BE1 /* extensions.swift */; };
 		243247D1A0697FA0839B5E97 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324F0EAAF5438773062C36 /* Venue.swift */; };
 		243247D7B29530748AC501D6 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24324491293A060BEE87129A /* Show.swift */; };
 		2432496E2D4B5FDFDC076975 /* norma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 243244D85B59A0C619BAE4E6 /* norma.jpg */; };
@@ -54,6 +55,7 @@
 		243241141F99A2F5E907D3E4 /* mobydick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mobydick.jpg; sourceTree = "<group>"; };
 		24324131D6A483C03E2E0E18 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		24324163F58C959836E49CD1 /* venues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = venues.plist; sourceTree = "<group>"; };
+		2432419796E7AF6048631BE1 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		2432441D24644C2A51BFBC20 /* pagliacci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pagliacci.jpg; sourceTree = "<group>"; };
 		24324491293A060BEE87129A /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		243244C3F8E761597BC1D153 /* madamebutterfly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = madamebutterfly.jpg; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2432457C8BA01AC14161FD73 /* Controller */,
 				24324CC9D64A713F5C554BAA /* View */,
 				24324B612AE7E2E8834DDAA4 /* Resources */,
+				24324A0DBF614F6D2C74BE20 /* Extensions */,
 			);
 			path = Symphonic;
 			sourceTree = "<group>";
@@ -164,6 +167,14 @@
 				24324894EED1A3118CE084C6 /* HistoryVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		24324A0DBF614F6D2C74BE20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2432419796E7AF6048631BE1 /* extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		24324A823C735E3A68A7EF40 /* Assets */ = {
@@ -322,6 +333,7 @@
 				2432428708CB08987C76A992 /* SearchShowsVC.swift in Sources */,
 				2432449AE589D45113D608E2 /* HistoryVC.swift in Sources */,
 				24324C11476737D33F2830D9 /* showCellView.swift in Sources */,
+				2432472D012EB1593BBEF04D /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

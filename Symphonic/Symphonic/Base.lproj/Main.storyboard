@@ -25,7 +25,9 @@
                             <outlet property="delegate" destination="aI4-i7-Rmd" id="kiH-Mx-Sbd"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Search" id="xoQ-s3-VeK"/>
+                    <navigationItem key="navigationItem" title="Search" id="xoQ-s3-VeK">
+                        <barButtonItem key="rightBarButtonItem" image="icon_filter" id="o57-n6-Nf7"/>
+                    </navigationItem>
                 </collectionViewController>
             </objects>
             <point key="canvasLocation" x="1562" y="-456"/>
@@ -110,6 +112,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_filter" width="30" height="27"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
